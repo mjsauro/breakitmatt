@@ -189,11 +189,10 @@ MonoBehaviour:
   xPush: 2
   yPush: 15
   ballSounds:
-  - {fileID: 8300000, guid: b330f851b92578e4bb49aa732d67e81f, type: 3}
+  - {fileID: 8300000, guid: 492a6f53b351ad944bef27fdaa7f3072, type: 3}
   - {fileID: 8300000, guid: ee122215437b6414797aee9efb2303d1, type: 3}
   - {fileID: 8300000, guid: 5210de3368e3a2f41a71192e38c29a08, type: 3}
   - {fileID: 8300000, guid: 8616c21a89116194ab07494928a26cde, type: 3}
-  - {fileID: 8300000, guid: 492a6f53b351ad944bef27fdaa7f3072, type: 3}
 --- !u!212 &212038183640496376
 SpriteRenderer:
   m_ObjectHideFlags: 1

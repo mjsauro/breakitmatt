@@ -12,10 +12,13 @@ public class Paddle : MonoBehaviour {
 	// Update is called once per frame
 	private void Update () {
 
-		float mousePositionInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits; 
+		float mousePositionInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
 
-		Vector2 paddlePosition = new Vector2(transform.position.x, transform.position.y);
-		paddlePosition.x = Mathf.Clamp(mousePositionInUnits, minX, maxX);
+		Vector2 paddlePosition = new Vector2(transform.position.x, transform.position.y)
+		{
+			x = Mathf.Clamp(mousePositionInUnits, minX, maxX)
+		};
+
 		transform.position = paddlePosition;
 
 
