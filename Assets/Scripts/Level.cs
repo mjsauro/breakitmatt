@@ -8,8 +8,9 @@ public class Level : MonoBehaviour
 	//cached reference
 	private SceneLoader _sceneloader;
 
-	public void CountBreakableBlocks()
+	public void CountBlocks()
 	{
+
 		breakableBlocks++;
 		_sceneloader = FindObjectOfType<SceneLoader>();
 	}
