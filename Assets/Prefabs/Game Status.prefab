@@ -53,4 +53,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSpeed: 1
   pointsPerBlockDestroyed: 83
+  scoreText: {fileID: 114969709187146778, guid: 2246c3d318b3f294d9b7ddf75e9b7c91,
+    type: 2}
   currentScore: 0
