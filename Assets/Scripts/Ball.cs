@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float xPush = 2f;
     [SerializeField] private float yPush = 15f;
     [SerializeField] private AudioClip[] ballSounds;
-    [SerializeField] private float randomFactor = 0.2f;
+    [SerializeField] private float randomFactor = 0.3f;
 
     // state
     private Vector2 _paddleToBallVector;
