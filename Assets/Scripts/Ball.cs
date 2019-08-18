@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Random = System.Random;
+﻿using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
@@ -13,18 +9,18 @@ public class Ball : MonoBehaviour
     [SerializeField] private AudioClip[] ballSounds;
 
     // state
-    Vector2 _paddleToBallVector;
-    bool _hasStarted = false;
+    private Vector2 _paddleToBallVector;
+    private bool _hasStarted = false;
 
     //cached component references
-    AudioSource myAudioSource;
+    private AudioSource _myAudioSource;
 
     // Use this for initialization
 
     void Start()
     {
         _paddleToBallVector = transform.position - paddle1.transform.position;
-        myAudioSource = GetComponent<AudioSource>();
+        _myAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,7 +51,7 @@ public class Ball : MonoBehaviour
         if (_hasStarted)
         {
             AudioClip clip = ballSounds[UnityEngine.Random.Range(0, ballSounds.Length)];
-            myAudioSource.PlayOneShot(clip);
+            _myAudioSource.PlayOneShot(clip);
         }
     }
 }

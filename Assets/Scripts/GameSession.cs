@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using TMPro;
 
-public class GameStatus : MonoBehaviour
+public class GameSession : MonoBehaviour
 {
 
     //parameters
@@ -19,7 +19,7 @@ public class GameStatus : MonoBehaviour
 
     private void Awake()
     {
-        int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
+        int gameStatusCount = FindObjectsOfType<GameSession>().Length;
 
         if (gameStatusCount > 1)
         {
@@ -50,4 +50,12 @@ public class GameStatus : MonoBehaviour
         scoreText.text = currentScore.ToString();
 
     }
+
+    public void ResetGameSession()
+    {
+        currentScore = 0;
+        scoreText.text = currentScore.ToString();
+    }
+
+
 }
