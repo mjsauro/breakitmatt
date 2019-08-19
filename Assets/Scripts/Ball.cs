@@ -64,8 +64,12 @@ public class Ball : MonoBehaviour
 
     private void PlayBallSounds()
     {
-        AudioClip clip = ballSounds[UnityEngine.Random.Range(0, ballSounds.Length)];
-        _myAudioSource.PlayOneShot(clip);
+        if (ballSounds != null)
+        {
+            AudioClip clip = ballSounds[UnityEngine.Random.Range(0, ballSounds.Length)];
+            _myAudioSource.PlayOneShot(clip);
+        }
+
     }
 
     private void RicochetBall()
