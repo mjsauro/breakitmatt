@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &386855840
+--- !u!1001 &450619926
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -212,13 +212,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
         type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
+        type: 2}
+      propertyPath: m_text
+      value: YOU WIN!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
+        type: 2}
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
         type: 2}
@@ -237,27 +252,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
         type: 2}
-      propertyPath: m_havePropertiesChanged
+      propertyPath: m_textInfo.pageCount
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114597729155703334, guid: a15367536b3ab5f44a1a27e26676a5db,
-        type: 2}
-      propertyPath: m_text
-      value: GAME OVER!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a15367536b3ab5f44a1a27e26676a5db, type: 2}
   m_IsPrefabAsset: 0
---- !u!224 &386855841 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224082980882018392, guid: a15367536b3ab5f44a1a27e26676a5db,
-    type: 2}
-  m_PrefabInternal: {fileID: 386855840}
 --- !u!1 &578093162
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1093430944}
-  - {fileID: 386855841}
+  - {fileID: 1165117413}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -524,6 +524,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1101121115}
   m_Script: {fileID: 11500000, guid: 5b27b1005bffb484e9e5644f8ee78758, type: 3}
+--- !u!224 &1165117413 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224082980882018392, guid: a15367536b3ab5f44a1a27e26676a5db,
+    type: 2}
+  m_PrefabInternal: {fileID: 450619926}
 --- !u!1 &1686074164
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +740,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
